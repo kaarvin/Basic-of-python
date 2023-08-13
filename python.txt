@@ -1,6 +1,8 @@
-python is the interpreted language
+python is the interpreted language & versitile language
+Python is the scripting language its executes the code line by line###
+
 ##DATATYPES:
-STRING -- inside the string every element should be taken as the  string
+STRING -- inside the string every element should be taken as the  string & it is a powerfull datatypes
 INTEGER -- integer is only consider as the number
 FLOAT -- float will wbe consider as the decimel values 
 BOOLEAN -- it will take only as True or false
@@ -9,3 +11,6 @@ LIST []
 TUPLE{}
 SET()
 DICT()
+
+PREDICTION RULE:
+BODMAS(BRACKET-ORDER-POWER-DIVSION-MULTIPLICATION-ADDITION-SUBTRACTION)
