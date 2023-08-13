@@ -1,1 +1,11 @@
 python is the interpreted language
+##DATATYPES:
+STRING -- inside the string every element should be taken as the  string
+INTEGER -- integer is only consider as the number
+FLOAT -- float will wbe consider as the decimel values 
+BOOLEAN -- it will take only as True or false
+
+LIST []
+TUPLE{}
+SET()
+DICT()
