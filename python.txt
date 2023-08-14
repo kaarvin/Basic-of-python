@@ -14,3 +14,18 @@ DICT{} -- In dict we used the key values we will take the key valued as answer:
 
 PREDICTION RULE:
 BODMAS(BRACKET-ORDER-POWER-DIVSION-MULTIPLICATION-ADDITION-SUBTRACTION)
+
+INDEXING:
+#1 Indexing is the method to take one element at the time
+#syntax:
+#str_variable[index_number]
+
+#str_variable --->when a datatype is declared with string type it is called str_varible
+index number:
+--->all element will have unique no : (i.e) index number
+index no will start will from 0:
+
+#Negtive index number:
+#2 negative number will start with (-1)
+
+SLICING:
