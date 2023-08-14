@@ -1,0 +1,53 @@
+##str
+
+#very powerfull function
+
+----> it can be convert any datatype into string data type.
+ 
+###program sample:
+a=123456779
+b=str(a)
+print(b)
+
+COUNT:
+
+#it take str (i.e) substring as input
+#it will check how many times the exact susbstring is present imside the str>
+
+program sample:
+a="i love play cricket"
+print(a.count("c") #output will be in int.
+
+INDEX:
+#it take str (i.e) substring as input
+#it will check extract the substring is inside or not
+#if the substring is present it will give the index number as output as first
+#if the substring is not found it will throw the error.
+
+FIND:(SAME AS THE INDEX)###
+#if the  susbstring is not found it will give you as output as -1
+
+JOIN:
+      ##syntax:
+      substring.join(str_variable)
+
+      ##substring will be placed in b/w all the elements of strings.
+      ##join can be used only if all the elements are str.
+
+SPLIT:
+     ##syntax:
+     ##str_variable.split("substring")
+
+###program sample:
+      a="I play cricket"
+a=(a.split("c"))
+
+REPLACE:
+   #a new string will be created:
+   #it will not affect the source str
+   #it is case sensitive ------>>>>>CASE SENSITIVE
+#program sample:
+a="i love India"
+b=a.replace("India","Cricket")
+print(b)
+   
