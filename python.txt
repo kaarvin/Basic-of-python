@@ -21,7 +21,7 @@ INDEXING:
 #str_variable[index_number]
 
 #str_variable --->when a datatype is declared with string type it is called str_varible
-index number:
+index number:##
 --->all element will have unique no : (i.e) index number
 index no will start will from 0:
 
@@ -29,3 +29,12 @@ index no will start will from 0:
 #2 negative number will start with (-1)
 
 SLICING:
+#--> SLICING is the method to take many element at time
+#Syntax:
+#str_variable[start_index_number : end_index_number -1 :step]
+#str_variable --->when a datatype is declared with string type it is called str_varible
+index number:###
+--->all element will have unique no : (i.e) index number
+index no will start will from 0:
+
+
