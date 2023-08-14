@@ -7,10 +7,10 @@ INTEGER -- integer is only consider as the number
 FLOAT -- float will wbe consider as the decimel values 
 BOOLEAN -- it will take only as True or false
 
-LIST []
+LIST [] -- any type of datatype used in list
 TUPLE{}
 SET()
-DICT{}
+DICT{} -- In dict we used the key values we will take the key valued as answer:
 
 PREDICTION RULE:
 BODMAS(BRACKET-ORDER-POWER-DIVSION-MULTIPLICATION-ADDITION-SUBTRACTION)
