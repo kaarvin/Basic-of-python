@@ -20,6 +20,6 @@ SAMPLE PROGRAM:
 a=1 ---> starting of the loop will be what we wnat we give the number
 while (a<100):---> the condiition is based on the only where we stop
   print(a)
-  a=a+2
+  a=a+2  ###because the loop is only based on condiiton.( condiiton is only main thing we do in the while loop )
 output:
 it wil print the output od 3 multiples.
