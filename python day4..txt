@@ -99,3 +99,129 @@ output:
 1
 1
 
+###conditions:
+#### for condition True there are infinite scenerios
+
+# while '': conditino False
+#   print(1)
+
+# while 'magesh': conditino True
+#   print(1) 
+
+###if condition::
+
+# syntax:
+# if condition:
+#   statement
+
+# if the condition is True then only if statemet will be executed
+
+---> if the condiiton is false ///
+# condition = False
+
+# False, 0 , any empty datatype , None ---this is the output of the program.
+
+###If else:
+# syntax:
+# if condition:
+#   statement
+# else:
+#   statement
+
+# if the condition is False then only else statemet will be executed
+# else cannoct be there without if
+
+###sample output program:
+
+if 23 * 0:
+  print(2)
+else:
+  print(2.1)      # execute
+
+if '23 * 0':
+  print(3)        # execute
+else:
+  print(3.2)
+  
+if {}:
+  print(4)
+else:
+  print(4.2)      # execute
+
+output:
+2.1
+3
+4.2
+
+###if elif:
+# syntax:
+
+# if condition:
+#   statement
+# elif condition:
+#   statemenet
+# elif condition:
+#   statemenet
+# else:
+#   statement
+
+# if the condition is False then only else statemet will be executed
+# elif & else cannoct be there without if
+# we can have any no of elif conditions
+# the entire if-else condition will have onlny one output
+# whichever the condition is  first True, only that output will be considired 
+# once any condition is true the entier if-else condition will be terminaged
+
+###sample program:
+if 23 + 0 // 2:
+  print(1)
+elif True:
+  print(2)
+elif ' ':
+  print(3)
+else:
+  print(4)     
+if 22 % 2:
+  print(5)      
+elif 'magesh':
+  print(6)  
+elif 'gold':
+  print(7)
+else:
+  print(8)
+if 'impo':
+  print(8.1)
+if '  ':
+  print(9.1)
+if '{}'*0:
+  print(9)
+elif '':
+  print(10)
+elif 'False':
+  print(11)
+elif 45 >= 45:
+  print(12)
+
+###output:
+1
+6
+8.1
+9.1
+11
+
+---> sample question:
+print the output of the program when 15 is divisible by 3 and 5:
+
+a = 15
+if a %3==0 and a%5==0:
+  print('it is div by both')
+elif a%5==0:
+  print('it is div by 5')
+elif a%3==0:
+  print('it is div by 3')
+
+output:
+it is div by both
+
+     
+
