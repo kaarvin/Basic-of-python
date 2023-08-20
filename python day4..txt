@@ -1,5 +1,5 @@
 ###ITERATION:
-Iterable datatype which we can do iteration.
+Iterable datatype which we can do iteration..
 
 ---->to take all the elemets from the type using 
 
