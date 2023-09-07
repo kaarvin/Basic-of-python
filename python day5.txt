@@ -1,1 +1,433 @@
+# 1. inbuild functions
+# 2. custom functions
+#   1. def - complex
+#   2. lambda - single line fun / simple fun
 
+a = [1, 2, 3, 4, 5]
+add = 0
+for i in a:
+  add = add + i
+
+print(add)
+
+
+# 1. add=0  ; i=1   ;  add=1
+# 2. add=1  ; i=2   ;  add=3
+# 3. add=3  ; i=3   ;  add=6
+# 4. add=6  ; i=4   ;  add=10
+# 5. add=10 ; i=5   ;  add=15
+
+---->>output of thr program:
+15
+
+print(type('str') == int)
+print(type('str') == str)
+
+---->>output:
+False
+True
+
+NEW SAMPLE OUTPUT PROGRAM:
+ku = [12,3,3,435,7,56,643,523,98]
+
+add = 0
+for i in ku:
+  add = add + i
+
+print(add)
+
+#### function syntax:
+
+# def function_name(  function_input  ):    -------- declaring a fun / creating.  - function_input = positional arguments
+#   statement
+
+# function_name()         -------- calling a fun / getting output
+
+# f_n = function_name     -------- assigning a fun
+# f_n - will become a fun (i.e) it can do all the thing which function_name can do
+
+###def hi_hello():     #-------- declaring a fun
+  print('Hi')
+  print('Hello')
+
+hi_hello()         #-------- calling a fun
+hi_hello()
+hi_hello()
+
+----->>output pf the program:
+Hi
+Hello
+Hi
+Hello
+Hi
+Hello
+
+###data1 = [12,3,3,435,7,56,643,523,98]
+a = [1, 2, 3, 4, 5]
+
+def addition1(ku):
+  print(ku)
+  # ku = [12,3,3,435,7,56,643,523,98]
+  add = 0
+  for i in ku:
+    add = add + i
+  print(add)
+
+
+addition1(a)
+addition1(data1)
+addition1([1,2,3,4,5,6])
+
+
+print(sum(data1))
+print(sum(a))
+print(sum([1,2,3,4,5,6]))
+# print(sum())  # error
+
+---->>output of the program:
+[1, 2, 3, 4, 5]
+15
+[12, 3, 3, 435, 7, 56, 643, 523, 98]
+1780
+[1, 2, 3, 4, 5, 6]
+21
+1780
+15
+21
+
+
+
+###FUNCTIONS:
+def welcome(person):
+  print('Welcome',person)
+
+
+welcome('Lokesh')
+welcome('Lily')
+welcome('Rose')
+
+####
+####global_var = 'Magesh' # ---- can be used inside a fun
+
+def welcome(person):
+  print('global variable',global_var)
+  print('Welcome',person)
+
+welcome('Lotus')
+
+###global_var = 'Magesh' # ---- can be used inside a fun
+
+def welcome(person):
+  local_var = 'Rose'  # ---- can be used only inside a fun
+  print('global variable',global_var)
+  print('Welcome',person)
+
+# print(local_var) # error
+welcome('Lotus')
+
+##NEW PROGRAM:
+a = [12, 3, 3, 435, 7, 56, 643, 523, 98]
+b = [1, 2, 3, 4, 5, 6]
+
+def addition1(ku):
+  add = 0
+  for i in ku:
+    add = add + i
+  print(add)
+
+
+# addition1(a) + 90 # error
+
+---->>THIS WILL GET THE ERROR OUTPUT
+
+#### when a function will will actual output:
+
+  # 1. when a function return a value
+  # 2. when a function return a value that is the actual output of a function
+  # 3. If function has no return the output of that function will be None
+
+----># 1. a function will return only one value (i.e) if a fun retrun any value one time that entire fun will be closed
+
+###a = [12, 3, 3, 435, 7, 56, 643, 523, 98]
+b = [1, 2, 3, 4, 5, 6]
+
+def addition1(ku):
+  add = 0
+  for i in ku:
+    add = add + i
+  print(add)
+
+print(addition1(a))
+
+----->OUTPUT OF THE PROGRAM:
+1780
+None
+
+###
+a = [12, 3, 3, 435, 7, 56, 643, 523, 98]
+b = [1, 2, 3, 4, 5, 6]
+
+def addition1(ku):
+  add = 0
+  for i in ku:
+    add = add + i
+  print('print value',add)
+  # return 10
+  return ('print value',add)
+
+print(addition1(a))       # ('print value',1780)
+print(type(addition1(a))) # tuple
+
+###a = [12, 3, 3, 435, 7, 56, 643, 523, 98]
+b = [1, 2, 3, 4, 5, 6]
+
+gv = 'global'
+
+def addi(di):
+  lv = 'local'
+  print(gv)
+  print(lv)
+  if di > 7:
+    print('1')
+    return 'Good'
+    print('2')
+  return 'Bad'
+
+
+print(gv)
+
+# print(lv) # -error
+
+v = addi(10)
+v1 = addi(0)
+print(v)       # Good
+print(type(v)) # str
+# print(v1)       # Bad
+# print(type(v1)) # str
+
+output:
+global
+global
+local
+1
+global
+local
+Good
+<class 'str'>
+
+####
+def basic1(name,age,sex):
+  print('name',name)
+  print('age',age)
+  print('sex',sex)
+
+name1 = 'Magesh'
+age1 = 20
+sex1 = 'M'
+
+basic1(sex1,age1,name1) # positional arguments
+basic1(sex = sex1, age = age1 , name = name1) # key-word  arguments
+
+newName = basic1
+
+---->output:
+name M
+age 20
+sex Magesh
+name Magesh
+age 20
+sex M
+
+###name99 = 'super'
+def any():
+  name99 = 'magesh'
+  print(name99) # 'magesh'
+
+print(name99) # super
+
+# any()
+
+###
+# lambda should be declared to variable that will act as function name
+# it return the values by default
+# syntax:
+# v = lambda inputs : statement
+# v
+
+###
+a = 1
+b = 2
+c = 3
+
+d = lambda a,b,c : a *b /c  / b * (c ** c / b)
+print(d(a,b,c))
+print(d(2,5,7))
+print(d(c = 2,b = 7,a =7))
+
+output:
+4.5
+47059.6
+2.0
+
+
+###
+a = 1
+b = 2
+c = 3
+
+d = lambda a,b,c : a * b * c
+
+
+###MATH::::
+# module
+# package
+# library
+
+a = 23.567
+aa = 23.467
+b = 23.567894
+bb = 23.567494
+
+# round
+
+# .decimal >= .5 it will increment the value
+# .decimal < .5 it will be same the value as int
+# we can only decrese the no of decimal places
+
+print(round(a))
+print(round(aa))
+print(round(b,3))
+print(round(bb,3))
+
+
+
+# floor,ciel are function from math module
+# 1. floor  - will do strict decrement
+# 2. ceil   - will do strict increment
+
+a = 23.567
+aa = 23.000001
+b = 23.567894
+bb = 23.99999999
+
+
+print(math.ceil(aa))
+print(math.floor(bb))
+
+
+print(d(6,7,8))
+print(d(6,2,8))
+
+
+###MAP AND FILTER:
+def hello():
+  return 'hello Magesh'
+
+def anyfun():
+  return 'to make you understand'
+
+def welcom(hel): # function as arguments
+  v = hel()
+  print(v)
+
+welcom(hello)
+welcom(anyfun)
+# welcom("anyfun") # error
+
+#### higher order functions:
+
+####  map
+
+# 1. it take two arguments
+#   1. function - as assigned
+#   2. iterable datatype
+# 2. it takes all the elements from iterable datatype and give it to the function one by one
+# 3. function output will be considired as orginal output
+# 4. datatype will be an iterator    |   we have to convert it to list
+
+a = [1,2,3,4,5]
+list(map(lambda a : a*2 , a ))
+
+---->[2, 4, 6, 8, 10]--->OUTPUT
+
+###a = [1,2,3,4,5]
+def check(a):
+  return a * 2
+print(tuple(map(check , a )))
+list(map(check , a ))
+
+a = [1,2,3,4,5]
+print(list(map(lambda a : a > 3 , a ))) # [False ,Flase ,Flase, True ,Ture]
+
+
+
+FILTER:
+#  filter
+
+# 1. it take two arguments
+#   1. function - as assigned
+#   2. iterable datatype
+# 2. it takes all the elements from iterable datatype and give it to the function one by one
+# 3. if function output is True the input element will be considired as output else that element wil not be considired
+# 4. datatype will be an iterator    |   we have to convert it to list
+
+
+###SAMPLE PROGRAM:
+a = [1,2,3,4,5]
+def check(a):
+  return a * 2
+print(tuple(filter(check , a ))) # [1 , 2, 3, 4 ,5]
+
+---->OUTPUT:
+(1, 2, 3, 4, 5)
+
+###
+a = [1,2,3,4,5]
+def check(a):
+  return a * 2%2
+print(tuple(filter(check , a ))) # ()
+
+##ITERATOR:
+# 1. any iterable data type can be converted into iterator by using iter()
+a = [1,2,3,4, 5]
+b = iter(a)
+b
+for i in b:
+  print(i)
+
+OUTPUT:
+1
+2
+3
+4
+5
+
+###a = [1,2,3,4, 5]
+b = iter(a)
+
+print(next(b))
+print(list(b)) # [2,3,4,5]
+print(list(b)) # []
+# print(next(b))
+
+a = [1,2,3,4, 5]
+b = iter(a)
+
+print(next(b))
+print(next(b))
+print(next(b))
+print(next(b))
+print(next(b))
+# print(next(b)) # storp iteration error
+print(list(b))
+
+###
+a = {1:2,2:3,3:4,4:5, 5:6}
+b = iter(a)
+print(b)
+print(next(b)) # key
+print(next(b)) # key
+
+###OUTPUT:
+1
+2
